@@ -1,0 +1,85 @@
+@import "../utilities/variables";
+
+section.hero {
+  background-image: url("../images/header-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+
+  @media (min-width: 992px) {
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    .header-container {
+      display: flex;
+      justify-content: center;
+      @media (min-width: 992px) {
+        justify-content: flex-start;
+      }
+      h1 {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+        width: 80%;
+        @media (min-width: 992px) {
+          text-align: left;
+          font-size: 60px;
+          width: 50%;
+        }
+      }
+    }
+
+    .buttons-container {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 7.5px;
+      @media (min-width: 992px) {
+        justify-content: flex-start;
+      }
+
+      .btn-discover {
+        background-color: $darkBlue;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px 30px;
+        transition: $transition;
+        border: 2px solid transparent;
+
+        &:hover {
+          background: none;
+          border: 2px solid white;
+          cursor: pointer;
+        }
+      }
+      .btn-contact {
+        padding: 15px 30px;
+        background: none;
+        color: white;
+        font-family: $openSans;
+        font-weight: 600;
+        font-size: 14px;
+        transition: $transition;
+
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

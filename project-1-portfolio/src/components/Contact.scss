@@ -1,0 +1,72 @@
+@import "../utilities/variables";
+
+section.contact {
+  padding: 120px 60px;
+
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+
+    .title-container {
+      text-align: center;
+      h2 {
+        margin-bottom: 15px;
+      }
+      p {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      margin-bottom: 45px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      input {
+        height: 3rem;
+        padding-left: 15px;
+        font-family: $openSans;
+        overflow: visible;
+        &::placeholder {
+          transition: $transition;
+        }
+        &:focus::placeholder {
+          transform: translateY(-16px);
+          color: $darkGray;
+          font-weight: 600;
+          font-size: 10px;
+        }
+      }
+      textarea {
+        height: 14rem;
+        padding-left: 15px;
+        padding-top: 15px;
+        font-family: $openSans;
+        &::placeholder {
+          transition: $transition;
+        }
+        &:focus::placeholder {
+          transform: translateY(-15px);
+          color: $darkGray;
+          font-weight: 600;
+          font-size: 10px;
+        }
+      }
+      button {
+        border-radius: 100px;
+        background: $darkBlue;
+        padding: 15px;
+        color: $lightGray;
+        font-size: 16px;
+        transition: $transition;
+        &:hover {
+          background: none;
+          cursor: pointer;
+          outline: 1px solid black;
+          color: black;
+        }
+      }
+    }
+  }
+}

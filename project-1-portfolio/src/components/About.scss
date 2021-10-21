@@ -1,0 +1,32 @@
+@import "../utilities/variables";
+
+section.about {
+  background: $lightGray;
+  padding: 120px 60px;
+
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    @media (min-width: 992px) {
+      display: flex;
+      gap: 30px;
+    }
+    .box {
+      @media (min-width: 992px) {
+        width: calc(100% / 3);
+      }
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .info {
+        h3.date {
+          color: $darkBlue;
+        }
+        @media (min-width: 992px) {
+          height: 120px;
+        }
+      }
+    }
+  }
+}

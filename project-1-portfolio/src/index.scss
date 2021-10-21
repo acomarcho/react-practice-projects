@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+@import "./utilities/variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 73px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  border: none;
+}
+
+p,
+a {
+  font-family: $openSans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $poppins;
+}
+
+h2 {
+  font-size: 28px;
+}

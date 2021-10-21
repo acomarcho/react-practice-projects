@@ -1,0 +1,43 @@
+@import "../utilities/variables";
+
+section.footer {
+  padding: 120px 60px;
+  background: $darkGray;
+
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      .icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: $darkBlue;
+        display: grid;
+        place-items: center;
+        transition: $transition;
+        &:hover {
+          background: white;
+          svg {
+            color: $darkBlue;
+          }
+        }
+        svg {
+          color: white;
+          font-size: 24px;
+        }
+      }
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: center;
+      color: $lightGray;
+      opacity: 0.8;
+    }
+  }
+}
