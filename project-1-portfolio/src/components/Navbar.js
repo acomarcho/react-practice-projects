@@ -11,7 +11,11 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="container">
           <div className="header">
-            <a href="#hero" className="logo-container">
+            <a
+              href="#hero"
+              className="logo-container"
+              onClick={() => setIsSidebarOpen(false)}
+            >
               <img src={logo} alt="logo" />
             </a>
             <button
@@ -32,16 +36,24 @@ const Navbar = () => {
       <aside className={`${isSidebarOpen ? "sidebar open" : "sidebar"}`}>
         <div className="links">
           <div className="link">
-            <a href="#about">About</a>
+            <a href="#about" onClick={() => setIsSidebarOpen(false)}>
+              About
+            </a>
           </div>
           <div className="link">
-            <a href="#services">Services</a>
+            <a href="#services" onClick={() => setIsSidebarOpen(false)}>
+              Services
+            </a>
           </div>
           <div className="link">
-            <a href="#reviews">Reviews</a>
+            <a href="#reviews" onClick={() => setIsSidebarOpen(false)}>
+              Reviews
+            </a>
           </div>
           <div className="link">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => setIsSidebarOpen(false)}>
+              Contact
+            </a>
           </div>
         </div>
       </aside>
