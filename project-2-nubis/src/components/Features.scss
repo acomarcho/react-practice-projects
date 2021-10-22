@@ -1,0 +1,52 @@
+@import "../utilities/variables";
+
+section.features {
+  padding: 120px 60px;
+  background-image: url("../images/features-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+
+    .title-container {
+      text-align: center;
+      color: $lightGray;
+      margin-bottom: 4rem;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      p {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+
+        .accordion-container {
+          flex-basis: 50%;
+        }
+
+        .img-container {
+          flex-basis: 50%;
+        }
+      }
+
+      .img-container {
+        img {
+          width: 100%;
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}

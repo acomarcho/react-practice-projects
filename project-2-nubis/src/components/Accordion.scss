@@ -1,0 +1,43 @@
+@import "../utilities/variables";
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  article {
+    display: flex;
+    gap: 1rem;
+
+    .icon-container {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+
+      flex-shrink: 0;
+
+      svg {
+        color: $lightGray;
+      }
+    }
+
+    .info-container {
+      .title {
+        color: $lightGray;
+        transition: $transition;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.75;
+          padding-left: 3px;
+        }
+      }
+      .collapsible {
+        margin-top: 1rem;
+        color: $lightGray;
+        overflow: hidden;
+        transition: $transition;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../utilities/variables";
+
+section.about {
+  padding: 120px 60px;
+  background-image: url("../images/details-2-background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+
+    .about-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      @media (min-width: 992px) {
+        flex-basis: 50%;
+      }
+
+      h5 {
+        color: $red;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: $darkGray;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        color: $red;
+        border: 1px solid $red;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: $transition;
+
+        &:hover {
+          background: $red;
+          color: $lightGray;
+        }
+      }
+    }
+
+    .about-img {
+      @media (min-width: 992px) {
+        flex-basis: 50%;
+      }
+      img {
+        width: 100%;
+        max-width: 600px;
+        @media (min-width: 992px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
