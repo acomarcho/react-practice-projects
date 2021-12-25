@@ -14,3 +14,10 @@ A site for a hypothetical company named Nubis based on https://inovatik.com/nubi
 Try it out at https://react-practice-project-2.netlify.app/.
 
 Uses the package 'react-icons' and 'react-animate-on-scroll'.
+
+# Project 3
+A clone of https://pahamify.com. This is created to mess around with Tailwind to get a feel of it.
+
+Try it out at https://react-practice-project-3.netlify.app/.
+
+Uses the package 'react-icons'.
