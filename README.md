@@ -21,3 +21,10 @@ A clone of https://pahamify.com. This is created to mess around with Tailwind to
 Try it out at https://react-practice-project-3.netlify.app/.
 
 Uses the package 'react-icons'.
+
+# Project 4
+A portfolio I made for my girlfriend based on this template https://www.figma.com/community/file/829474905036527548. This is made to practice Tailwind.
+
+Try it out at https://react-practice-project-4.netlify.app/.
+
+Uses the package 'react-icons' and 'react-animate-on-scroll'.
